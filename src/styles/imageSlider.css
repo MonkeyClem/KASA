@@ -1,0 +1,75 @@
+.logement-layout{
+    width : 100%;
+}
+
+.slider{
+    position: relative;
+    width: 100%;
+    height: 415px;
+    border-radius: 25px;
+    display: flex;
+    justify-content: center;
+}
+
+.rightArrow{
+    position: absolute;
+    font-size: 3rem;
+    right: 32px;
+    top: 35%;
+    user-select: none;
+    cursor: pointer;
+    z-index: 10;
+}
+
+.leftArrow{
+    position: absolute;
+    font-size: 3rem;
+    color: green;
+    left: 32px;
+    top: 35%;
+    user-select: none;
+    cursor: pointer;
+    z-index: 10;
+}
+
+.logementImage{
+    width: 100%;
+    height: 100%;
+    border-radius: 30px;
+    object-fit: cover;
+}
+
+.slide{
+    opacity: 0;
+    transition-duration: 0.3s;
+}
+
+.slide.active{
+    width: 92%;
+    height: 95%;
+    opacity: 1;
+    transition-duration: 0.3s;
+    transform: scale(1.08);
+    border-radius: 30px;
+    background-size: contain;
+}
+
+
+@media screen and (max-width: 780px){
+
+
+.slider{
+    height: 260px;
+}
+.leftArrow{
+    height: 48px;
+    top: 45%;
+}
+
+
+.rightArrow{
+    height: 48px;
+    top: 45%;
+}
+
+}

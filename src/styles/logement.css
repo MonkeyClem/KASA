@@ -1,0 +1,164 @@
+*{
+    padding: 0;
+}
+
+.houseTitle{
+   color: #FF6060;
+   font-size: 36px;
+   font-weight: 200;
+}
+.houseLocalisation{
+    color: #FF6060;
+    font-size: 24px;
+ }
+.flexContainer{
+    display: flex;
+    justify-content: space-between;
+}
+ .tagsContainer{
+    display: flex;
+    padding: 0;
+    height: 10%;
+    align-items: center;
+ }
+
+ .tags{
+    list-style: none;
+    color: #fff;
+
+    box-sizing: border-box;
+    margin-right: 16px;
+    padding: 8px;
+
+    background-color: #FF6060;
+    border-radius: 15px;
+ }
+.hostContainer{
+    display: flex;
+    margin-top: 30px;
+}
+.hostContainer p{
+    margin-right: 24px;
+}
+ .hostName{
+    color: #FF6060;
+    font-size: 24px;
+ }
+ .hostImg{
+    border-radius: 75px;
+ }
+
+ .collapseContainer{
+    display: flex;
+    flex-flow: column;
+    width: 47%;
+  
+}
+
+ .collapseContain{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 114px;
+    width: 50%;
+ }
+
+ .collapseBanner{
+    background-color: #FF6060;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+ }
+ 
+ .collapseHouseTab{
+    width: 40%;
+ }
+
+.houseCollapseContainer{
+    display: flex;
+    justify-content: space-between;
+}
+
+.justifyRightCollapse{
+    display: flex;
+    justify-content: flex-end;
+}
+
+/* .tryOut{
+    background-color:#fff;
+    border: none;
+    border-radius: 15px;
+    width: 40%;
+} */
+
+.collapseDescription{
+    font-weight: 100;
+}
+
+
+
+@media screen and (max-width: 780px){
+
+    #root{
+        margin: auto;
+   }
+
+    body{
+        display: flex;
+        width: fit-content;
+        margin: auto;
+    }
+
+    .houseCollapseContainer {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .flexContainer {
+        flex-direction: column;
+    }
+
+    /* .houseCollapseMobileAdjust{
+        width: 100%;
+    } */
+
+    .houseTitle{
+        font-size: 24px;
+     }
+
+     .houseLocalisation{
+         font-size: 18px;
+      }
+
+    .tags{
+        font-size: 8px;
+        border-radius: 5px;
+    }
+    .mobileFlexReverseHost{
+        display: flex;
+        flex-direction: row-reverse;
+        justify-content: space-between;
+    }
+    .hostContainer p {
+        margin-right: 8px;
+    }
+    .starContainer{
+        padding-bottom: 16px;
+        width: 45%;
+        display: flex;
+        height: 20%;
+        align-self: flex-end;
+    }
+    .hostContainer{
+        width: 45%;
+    }
+    .hostImg{
+        height: 60px;
+    }
+    .hostName{
+        font-size: 18px;
+    }
+    .starRating{
+        height: 18px;
+    }
+
+}

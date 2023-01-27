@@ -1,0 +1,74 @@
+.collapseTabContainer {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 144px;
+}
+
+.toggle {
+  background: #f7f7f7;
+  border-radius: 5px;
+  color: #ff6060;
+  border-radius: 15px;
+  padding: 15px;
+  box-sizing: border-box;
+  font-weight: 100;
+}
+
+.equipmentsContainer {
+  list-style: none;
+  font-weight: 100;
+}
+
+.collapseLabel {
+  cursor: pointer;
+  width: 100%;
+}
+
+.collapseBanner {
+  cursor: pointer;
+  border-radius: 15px;
+  border: none;
+  width: 100%;
+}
+
+span {
+  align-self: center;
+  margin-right: 24px;
+}
+.toggleArrow {
+  height: 15px;
+  align-self: center;
+}
+
+.collapseTab {
+  margin-top: 36px;
+}
+
+.collapseTabContainer {
+  display: flex;
+  flex-flow: column;
+  margin: auto;
+  width: 80%;
+  align-items: center;
+  background-color: #fff;
+}
+
+.mobileAdjust {
+  margin: 8px 0px;
+  width: 80%;
+}
+
+.houseCollapseMobileAdjust{
+    width: 100%;
+}
+
+@media screen and (max-width: 780px) {
+  .collapseTabContainer {
+    width: 100%;
+  }
+
+  .mobileAdjust {
+    margin: 8px 0px;
+    width: 100%;
+  }
+}

@@ -31,20 +31,8 @@ function Home() {
                   </section>
 
                   <section className='gallery'>
-                           <Card>
-                              {/* <div>
-                                    <ul className='houseListContainer'>
-                                    {data.map((house) => (
-                                       <li key={house.id} className='houseListCard'>
-                                          <Link to ={house.id} className='houseLink'>
-                                             <img className="img" src={house.cover} alt="logement" />
-                                             <p className='houseTitle'>{house.title}</p>
-                                          </Link>
-                                       </li>
-                  ))}
-                                    </ul>
-                              </div> */}
-                           </Card>
+                           <Card />
+                              
                   </section>
 
                </Body>

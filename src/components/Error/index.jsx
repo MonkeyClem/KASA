@@ -1,5 +1,5 @@
 import Banner from '../Banner.js'
-import '../../styles/header.css'
+import '../../styles/banner.css'
 import '../../styles/error.css'
 import Erreur from '../../assets/error.svg'
 import { Link } from 'react-router-dom'

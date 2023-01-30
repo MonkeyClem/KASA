@@ -25,7 +25,7 @@ function Logement() {
 
             <ul className="tagsContainer">
               {foundHouse.tags.map((tags, index) => (
-                <li key={index.tags} className="tags">
+                <li key={index} className="tags">
                   {tags}
                 </li>
               ))}

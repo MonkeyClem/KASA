@@ -4,9 +4,7 @@ body {
 
 .kasa-container {
     width: 90%;
-    position: relative;
-    right: 5%;
-    left: 5%;
+    margin: auto;
 }
 
 .firstSection {
@@ -120,6 +118,10 @@ body {
     height: 200px;
   }
 
+  .tagline {
+    font-size: 32px;
+  }
+
   .houseListCard {
     list-style: none;
     margin: 3% 0%;
@@ -148,6 +150,10 @@ body {
 
   .firstSection {
     height: 200px;
+  }
+
+  .tagline {
+    font-size: 32px;
   }
 
   .houseListContainer {

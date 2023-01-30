@@ -1,5 +1,4 @@
 import '../styles/banner.css'
-// import logo from "../assets/logo.svg"
 import React from 'react'
 import { Link } from 'react-router-dom'
 import logo from "../assets/logo.svg"

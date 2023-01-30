@@ -5,25 +5,13 @@ import background from '../assets/IMG.svg'
 import {Body} from '../components/body'
 import {Card} from '../components/Card'
 import Footer from '../components/Footer'
-import data from '../datas/logements.json' 
-console.log(data)
-
 
 function Home() {
 
    return (
       <div>
-            <div className='kasa-layout'>
-               <Banner>
-                  {/* <header className='kasa-header'>
-                     <img src= {logo} alt='Logo' className='kasa-logo'></img>  
-                     <nav className='kasa-header-nav'>
-                        <Link to="/" className='linkText'>Accueil</Link>
-                        <Link to="/aPropos" className='linkTextTwo'>A Propos</Link>
-                     </nav>
-               </header> */}
-               </ Banner>
-
+            <div className='kasa-container'>
+               <Banner/>
                <Body>
                   <section className='firstSection'>
                   <span className='tagline'>Chez vous, partout et ailleurs</span>   
@@ -31,16 +19,13 @@ function Home() {
                   </section>
 
                   <section className='gallery'>
-                           <Card />
-                              
+                           <Card/>
                   </section>
 
                </Body>
             
               </div>
-
             <Footer/>
-
          </div>
          
         )

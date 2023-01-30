@@ -4,19 +4,17 @@ import Collapsible from '../components/Collapse'
 import background from '../assets/aboutUsBackground.svg'
 import Footer from '../components/Footer'
 import '../styles/aPropos.css'
-// import logo from "../assets/logo.svg"
 
 function aPropos() {
-  console.log('Nous dans la page aPropos.jsx')
   return (
     <div>
-      <div className="kasa-layout">
+      <div className="kasa-container">
         <Banner></Banner>
         <section className="firstSection">
           <img className="homeImage" src={background} alt="paysage Tropicale" />
         </section>
 
-          <div className="collapseTabContainer">
+        <section className="collapseTabContainer">
             <Collapsible>
               <h4>Fiabilité</h4>
               <p className="aboutUsCollapseContent">
@@ -54,7 +52,7 @@ function aPropos() {
                 hôtes.
               </p>
             </Collapsible>
-          </div>
+        </section>
       </div>
       <Footer />
     </div>

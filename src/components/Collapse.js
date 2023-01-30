@@ -34,9 +34,7 @@ const Collapsible = ({ children }) => {
             />
           </span>
         )}
-        {/* A VOIR AVEC RIDA : QUEL OPTION FAVORISER ?? Celle ci-dessous est plus "claire" alors que celle ci-dessus correspond au format conseillé par React :  https://fr.reactjs.org/docs/conditional-rendering.html
-                    {arrow && (<span><img src= {upArrow} alt = "Flèche indiquant qu'il est possible d'afficher du texte supplémentaire concernant les équipements ou la description du logement"/></span>)} 
-                    {!arrow && <span><img src = {downArrow} alt = "Flèche indiquant qu'il est possible de masquer du texte concernant les équipements ou la description du logement"/></span>} */}
+       
       </button>
       {open && (
         <div className="toggle">

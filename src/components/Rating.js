@@ -3,13 +3,11 @@ import greyStar from '../assets/empty_star.svg'
 import {  useParams } from "react-router-dom";
 import data from '../datas/logements.json'
 
-
-
 const RateFunction = () => {
     const routeParams = useParams();
     const foundHouse = data.find(el => el.id === routeParams.id)
     const notation = foundHouse.rating
-    var avis = notation;
+    let avis = notation;
     switch (avis) {
         case "1":
             return <div className='starContainer'> 

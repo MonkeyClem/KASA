@@ -33,7 +33,7 @@
     background-color: #FF6060;
     border-radius: 15px;
  }
- 
+
 .hostContainer{
     display: flex;
     margin-top: 30px;
@@ -94,11 +94,11 @@
 
     #root{
         margin: auto;
+        /* width: 80%; */
    }
 
     body{
         display: flex;
-        width: fit-content;
         margin: auto;
     }
 
@@ -124,8 +124,10 @@
       }
 
     .tags{
-        font-size: 8px;
         border-radius: 5px;
+        height: 31px;
+        display: flex;
+        align-items: center;
     }
     .mobileFlexReverseHost{
         display: flex;

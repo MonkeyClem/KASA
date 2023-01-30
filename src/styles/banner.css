@@ -1,13 +1,11 @@
- .kasa-layout{
-    width : 90%;
+/* .kasa-layout {
+    width: 90%;
     position: relative;
     right: 5%;
     left: 5%;
-} 
-
+} */
 
 .kasa-header {
-    /* position: absolute; */
     width: 100%;
     display: flex;
     height: 70px;
@@ -16,70 +14,82 @@
     margin-bottom: 50px;
 }
 
-.kasa-header-nav{
+.kasa-header-nav {
     width: 25%;
     display: flex;
     justify-content: inherit;
 }
 
-.kasa-logo{
-    left : 0%;
+.kasa-logo {
+    left: 0%;
     right: 83.04%;
     top: 0%;
     bottom: 0%;
 }
 
+.linkText {
+    left: 75.08%;
+    right: 13.95%;
+    top: 25%;
+    bottom: 25%;
 
-.linkText{
-left: 75.08%;
-right: 13.95%;
-top: 25%;
-bottom: 25%;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 142.6%;
+    /* or 34px */
 
-font-family: 'Montserrat';
-font-style: normal;
-font-weight: 500;
-font-size: 24px;
-line-height: 142.6%;
-/* or 34px */
-
-display: flex;
-align-items: center;
-text-align: right;
-text-decoration-line: underline;
-
-color: #FF6060;
+    display: flex;
+    align-items: center;
+    text-align: right;
+    text-decoration: none;
+    color: #ff6060;
 }
 
-.linkTextTwo{
-left: 90.65%;
-right: 0%;
-top: 25%;
-bottom: 25%;
-
-font-family: 'Montserrat';
-font-style: normal;
-font-weight: 500;
-font-size: 24px;
-line-height: 142.6%;
-/* or 34px */
-
-display: flex;
-align-items: center;
-text-align: right;
-text-decoration: none;
-
-color: #FF6060;
+.linkText:hover {
+    text-decoration: underline;
+    color: #ff6060;
 }
 
-@media screen and (max-width: 780px){
+.linkTextTwo {
+    left: 90.65%;
+    right: 0%;
+    top: 25%;
+    bottom: 25%;
 
-    .kasa-header{
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 142.6%;
+    /* or 34px */
+
+    display: flex;
+    align-items: center;
+    text-align: right;
+    text-decoration: none;
+    color: #ff6060;
+}
+
+.linkTextTwo:hover {
+    text-decoration: underline;
+    color: #ff6060;
+}
+
+@media screen and (max-width: 780px) {
+    /* .kasa-layout {
+        position: unset;
+        margin: auto;
+    } */
+
+    .kasa-header {
         display: flex;
         align-content: center;
     }
-    .kasa-logo{
-        height: 100%;
+
+    .kasa-logo {
+        height: 85%;
         width: 45%;
     }
 
@@ -87,13 +97,11 @@ color: #FF6060;
         width: 45%;
     }
 
-    .linkText{
+    .linkText {
         font-size: 15px;
     }
+
     .linkTextTwo {
         font-size: 15px;
     }
-
-  
-
 }

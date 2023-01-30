@@ -6,8 +6,7 @@ import {Link} from 'react-router-dom'
 // 	return 	children
 // }
 
-export function Card({children}) {
-	console.log(children)
+export function Card() {
 	return 	<div>
     <ul className='houseListContainer'>
     {data.map((house) => (
@@ -22,5 +21,4 @@ export function Card({children}) {
 </div>
 }
 
-/* POUR CREER LA PAGE DE LOGEMENT : Créer un composant particulier, dans lequel nous allons récupérer l'ID du logement dans l'URL 
-   Grace à l'URL que nous avons récupérer, nous allons ensuite chercher les infos correspondante*/
+

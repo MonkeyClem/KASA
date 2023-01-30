@@ -13,13 +13,13 @@ function Logement() {
 
   if (foundHouse) {
     return (
-      <div className="kasa-layout">
+      <div className="kasa-container">
         <Banner />
         {/* <img src={foundHouse.cover} alt = "Appartement proposé" className='logementImage'/> */}
         <ImageSlider slides={foundHouse.pictures}></ImageSlider>
 
-        <div className="flexContainer">
-          <div className="titleAndDescription">
+        <section className="flexContainer">
+          <article className="titleAndDescription">
             <h2 className="houseTitle">{foundHouse.title}</h2>
             <p className="houseLocalisation">{foundHouse.location}</p>
 
@@ -30,9 +30,9 @@ function Logement() {
                 </li>
               ))}
             </ul>
-          </div>
+          </article>
 
-          <div className='mobileFlexReverseHost'>
+          <article className='mobileFlexReverseHost'>
             <div className="hostContainer">
               <p className="hostName">{foundHouse.host.name}</p>
               <img
@@ -42,8 +42,8 @@ function Logement() {
               />
             </div>
             <Rating />
-          </div>
-        </div>
+          </article>
+        </section>
         <div className="houseCollapseContainer">
           <div className="houseCollapseMobileAdjust">
             <Collapsible>

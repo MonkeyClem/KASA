@@ -2,6 +2,13 @@ body {
   margin: 0;
 }
 
+.kasa-container {
+    width: 90%;
+    position: relative;
+    right: 5%;
+    left: 5%;
+}
+
 .firstSection {
   margin-top: 50px;
   width: 100%;
@@ -71,6 +78,7 @@ body {
 .img {
   width: 100%;
   height: 100%;
+  border-radius: 15px;
 }
 
 .houseTitles {
@@ -79,7 +87,7 @@ body {
   color: white;
   font-family: 'Montserrat';
   font-weight: 500;
-  font-size: 16px;
+  font-size: 20px;
 }
 
 .footerContainer {
@@ -132,7 +140,7 @@ body {
     display: flex;
   }
 
-  .kasa-layout {
+  .kasa-container {
     right: 0%;
     left: 0%;
     margin: auto;

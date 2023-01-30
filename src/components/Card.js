@@ -1,11 +1,6 @@
 import data from '../datas/logements.json' 
 import {Link} from 'react-router-dom'
 
-// export function Card({children}) {
-// 	console.log(children)
-// 	return 	children
-// }
-
 export function Card() {
 	return 	<div>
     <ul className='houseListContainer'>

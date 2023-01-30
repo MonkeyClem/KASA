@@ -6,7 +6,6 @@ import leftArrow from '../assets/leftArrow.svg'
 import '../styles/imageSlider.css'
 
 export function ImageSlider({slides}){
-    console.log('Nous entrons dans le Components ImageSlider')
     const routeParams = useParams();
     const foundHouse = data.find(el => el.id === routeParams.id)
     const [current, setCurrent] = useState(0)

@@ -6,12 +6,34 @@ import upArrow from '../assets/upArrow.svg'
 import downArrow from '../assets/downArrow.svg'
 
 const Collapsible = ({ children }) => {
+
+/*Syntaxe du UseState: Le premier élément est l'état initial et le second est une fonction qui est 
+  utilisée pour mettre à jour l'état. 
+
+  L'état initial des éléments (ici, il s'agit donc de open et de arrow) sont par la suite modifié par la fonction Toggle 
+  Cette fonction toggle contient elle même les fonctions SetOpen, et setDown, qui sont utilisées respectivement pour modifier 
+  l'état de Open, et l'état de arrow 
+  */
+
   const [open, setOPen] = useState(false)
   const [arrow, setDown] = useState(false)
   const toggle = () => {
     setOPen(!open)
     setDown(!arrow)
   }
+
+  console.log(open)
+  console.log(arrow)
+
+  /*Nous retournons donc au sein du HTML un boutton sur lequel la fonction Toggle se délenche lors du clique de
+   l'utilisateur
+   La props.children est utilisée afin de retourner au sein du DOM le contenu inclus entre les balises 
+   d'ouverture et de fermeture lorsque le composant est appelé
+   Pour finir, nous utilisons les opérateurs conditionnels afin de définir l'UI en fonction 
+   de l'état de arrow et de open
+   Si arrow est false (ce qui est son état de base), la fleche est orienté vers le haut, dans le cas contraire elle est
+   orientée vers le bas
+   */ 
 
   return (
     <div className = "mobileAdjust">
@@ -34,11 +56,10 @@ const Collapsible = ({ children }) => {
             />
           </span>
         )}
-       
       </button>
       {open && (
         <div className="toggle">
-          <h4 /*className="collapseLabel"*/>{children[1]}</h4>
+          <span>{children[1]}</span>
         </div>
       )}
     </div>

@@ -9,7 +9,7 @@ function aPropos() {
   return (
     <div>
       <div className="kasa-container">
-        <Banner></Banner>
+        <Banner/>
         <section className="firstSection">
           <img className="homeImage" src={background} alt="paysage Tropicale" />
         </section>

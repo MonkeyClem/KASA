@@ -8,9 +8,9 @@ import {
 
 import Home from '../src/pages/Home.js';
 import AboutUs  from '../src/pages/aPropos';
+import Logement from '../src/pages/logement'
 import Error from '../src/components/Error/index'
 import reportWebVitals from './reportWebVitals';
-import Logement from '../src/pages/logement'
 
 
 const root = ReactDOM.createRoot(document.getElementById('root'));

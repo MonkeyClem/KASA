@@ -9,7 +9,7 @@
 }
 .houseLocalisation{
     color: #FF6060;
-    font-size: 24px;
+    font-size: 18px;
  }
 .flexContainer{
     display: flex;
@@ -26,9 +26,11 @@
     list-style: none;
     color: #fff;
 
+    font-size: 14px;
+
     box-sizing: border-box;
     margin-right: 16px;
-    padding: 8px;
+    padding: 12px;
 
     background-color: #FF6060;
     border-radius: 15px;
@@ -43,11 +45,25 @@
 }
  .hostName{
     color: #FF6060;
-    font-size: 24px;
+    font-size: 18px;
  }
  .hostImg{
     border-radius: 75px;
+    width: 64px;
+    height: 64px;
  }
+
+ .mobileFlexReverseHost{
+    display: flex;
+    flex-flow: column;
+    justify-content: space-evenly;
+ }
+
+ .starRating{
+    height: 30px;
+    width: 30px;
+}
+
 
  .collapseContainer{
     display: flex;
@@ -68,6 +84,8 @@
     color: #fff;
     display: flex;
     justify-content: center;
+    align-items: center;
+    height: 52px;
  }
  
  .collapseHouseTab{
@@ -91,7 +109,7 @@
 
 
 @media screen and (max-width: 780px){
-
+  
     #root{
         margin: auto;
         /* width: 80%; */
@@ -116,16 +134,17 @@
     } */
 
     .houseTitle{
-        font-size: 24px;
+        font-size: 18px;
      }
 
      .houseLocalisation{
-         font-size: 18px;
+         font-size: 12px;
       }
 
     .tags{
         border-radius: 5px;
-        height: 31px;
+        height: 18px;
+        font-size: 10px;
         display: flex;
         align-items: center;
     }
@@ -145,16 +164,20 @@
         align-self: flex-end;
     }
     .hostContainer{
+        justify-content: flex-end;
         width: 45%;
+        margin: 0;
     }
     .hostImg{
-        height: 60px;
+        height: 32px;
+        width: 32px;
     }
     .hostName{
-        font-size: 18px;
+        font-size: 12px;
     }
     .starRating{
-        height: 18px;
+        height: 15px;
+        width: 15px;
     }
 
 }

@@ -1,7 +1,7 @@
-import Banner from '../Banner.js'
-import '../../styles/banner.css'
-import '../../styles/error.css'
-import Erreur from '../../assets/error.svg'
+import Banner from '../components/Banner'
+import '../styles/banner.css'
+import '../styles/error.css'
+import Erreur from '../assets/error.svg'
 import { Link } from 'react-router-dom'
 
 function Error() {

@@ -1,5 +1,5 @@
 import Banner from '../components/Banner'
-import Error from '../components/Error/index'
+import Error from '../pages/error'
 import data from '../datas/logements.json'
 import '../styles/logement.css'
 import { useParams } from 'react-router-dom'
@@ -8,13 +8,12 @@ import Collapsible from '../components/Collapse'
 import Rating from '../components/Rating'
 
 
-/*Utilisation de useParams qui nous retournes les paramètres présents de l'URL sous forme de ttableau 
-  Nous nous servons ensuite de la méthode find qui nous permet de trouver l'éléments ayant l'ID 
-  correspondant au sein du fichier JSON 
-  
-  La condition if nous permet de retourner des éléments correspondant aux logements si et seulement si la méthode find nous retourne
-  une valeur. Si ce n'est pas le cas, Error nous est retourné
-   */
+/*FONCTION LOGEMENT : 
+- UseParams permet de récupérer les paramètres de l'URL, dans lesquels se trouve l'ID du logement séléctionné par l'utilisateur
+- foundHouse nous permet ensuite de recherher au sein du fichier JSON un ID similaire à celui présent dans l'URL
+- Si foundhouse nous retourne une valeur, alors nous affichons les éléments correspondant dans le DOM. Dans le cas contraire, la page error est retournée.
+*/
+
 function Logement() {
   const routeParams = useParams()
   const foundHouse = data.find((el) => el.id === routeParams.id)

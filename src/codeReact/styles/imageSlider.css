@@ -39,14 +39,20 @@
     object-fit: cover;
 }
 
+.slider{
+    height: 415px;
+}
 .slide{
     opacity: 0;
     transition-duration: 0.3s;
 }
 
 .slide.active{
-    width: 92%;
+    flex-flow: column;
+    width: 95%;
+    position: absolute;
     height: 95%;
+    display: flex;
     opacity: 1;
     transition-duration: 0.3s;
     transform: scale(1.08);
@@ -55,28 +61,29 @@
 }
 
 .indexNumbers{
-    position: absolute;
+    position: relative;
     color: white;
-    margin: 50% -50%;
+    margin: -5% -50%;
 }
 
 @media screen and (max-width: 780px){
 
     .slider{
-        height: 260px;
+        height: 225px; 
     }
+
     .leftArrow{
-        height: 48px;
+        height: 34px;
         top: 45%;
     }
 
     .rightArrow{
-        height: 48px;
+        height: 34px;
         top: 45%;
     }
     .indexNumbers{    
-        position: absolute;
-        margin: 70% -50%;
+        position: relative;
+        margin: -7% -50%;
         color: white;
     }
 

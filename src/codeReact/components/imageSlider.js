@@ -5,36 +5,40 @@ import rightArrow from '../assets/rightArrow.svg'
 import leftArrow from '../assets/leftArrow.svg'
 import '../styles/imageSlider.css'
 
-export function ImageSlider({slides}){
 
-    /*  Utilisation de useParams qui nous retournes les paramètres présents de l'URL sous forme de tableau 
-        Nous nous servons ensuite de la méthode find qui nous permet de trouver l'éléments ayant l'ID 
-        correspondant au sein du fichier JSON
-    
-        Nouvelle utilisation du useState, mais cette fois-ci avec une valeur de départ de type Number
+    /* Explication de ImageSlider : 
 
-        Nous utilisons une condition au sein de laquelle, si la méthode Array.isArray (avec la props 
-        slides en valeur, qui correspond à foundHouse.pictures) n'est pas respecté alors, ou que sa valeur 
-        est de 0, alors null nous est retournée  
+        - routeParams permet de récupérer les paramètres de l'URL, dans lesquels se trouve l'ID du logement séléctionné par l'utilisateur
+        - foundHouse nous permet ensuite de recherher au sein du fichier JSON un ID similaire à celui présent dans l'URL
+        - Si foundhouse nous retourne une valeur, alors nous affichons les éléments correspondant dans le DOM. Dans le cas contraire, la page 
+          error est retournée.
 
-        Les fonctions nextSlide et prevSlide se servent de la valeur présente dans la variable d'état current
-        afin de fonctionner.  
+        -Nous utilisons useState, avec une valeur de départ de type Number (valeur 0)
 
-        nextSlide :  Si current est strictement la valeur de length -1, alors la valeur passe à 0, ce qui
-                     nous permet de revenir au début du tableau. Dans le cas contraire, nous ajoutons simplement +1
-                     au tableau
-        
-        prevSlide : nous permet de revenir à l'index précédent :  Si current est strictement égale à 0, alors la valeur passe 
-                    à length -1, ce qui permet de revenir au dernier index du tableau.  
-                    Dans le cas contraire la valeur passe à current -1, ce qui permet de simplement revenir à l'index précédent
+        - Si la méthode Array.isArray (avec la props slides en valeur, qui correspond à foundHouse.pictures) 
+        n'est pas respectée alors, ou que sa valeur est de 0, alors null nous est retournée
+
+           - Les fonctions nextSlide et prevSlide se servent de la valeur présente dans current afin de fonctionner :
+
+                                nextSlide :  Si current est strictement égale la valeur de length -1, alors la valeur passe 
+                                            à 0, ce qui nous permet de revenir au début du tableau. Dans le cas contraire, nous 
+                                            ajoutons simplement +1 au tableau
+
+                                prevSlide : nous permet de revenir à l'index précédent :  Si current est strictement
+                                            égale à 0, alors la valeur passe  à length -1, ce qui permet de revenir au 
+                                            dernier index du tableau. Dans le cas contraire la valeur passe à current -1, ce qui 
+                                            permet de revenir à l'index précédent
+
+        - L'affichage de rightArrow et leftArrow n'est déclenché que si le logement possède plusieurs photos
+
+     
     */
+export function ImageSlider({slides}){
 
     const routeParams = useParams();
     const foundHouse = data.find(el => el.id === routeParams.id);
     const [current, setCurrent] = useState(0);
     const length = slides.length;
-    console.log(current)
-    console.log(length)
     const foundHouseImage = foundHouse.pictures;
 
     if(!Array.isArray(slides) || slides.length <= 0 ){
@@ -49,8 +53,6 @@ export function ImageSlider({slides}){
    const prevSlide = () => {
         setCurrent(current === 0 ? length -1 : current -1)
    };
-
-    console.log(length)
 
 if(length === 1){
     return <>
@@ -92,12 +94,5 @@ if(length === 1){
 };
    
 }
-
-
-
-   //Si l'index du tableau retourné par map est strictement égale à la valeur de current, alors sa classe est slide active. 
-   //Dans le cas contraire, c'est la classe slide qui sera appliquée (ligne 64) 
-
-   
 
 export default ImageSlider

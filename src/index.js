@@ -1,6 +1,9 @@
 import React from 'react'
 import ReactDOM from 'react-dom/client'
-import App from './logiqueRoutage/App'
+import App from './reactRouter/App'
+
+/*  L'ajout de React.StrictMode n'est pas obligatoire et n’a aucune incidence sur l’interface utilisateur, mais 
+    permet d’apporter des vérifications additionnelles pour ses enfants. */
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(

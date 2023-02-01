@@ -6,7 +6,7 @@ import {BrowserRouter as Router} from 'react-router-dom';
 import Home from '../codeReact/pages/Home'
 import AboutUs from '../codeReact/pages/aPropos';
 import Logement from '../codeReact/pages/logement';
-import Error from '../codeReact/components/Error/index';
+import Error from '../codeReact/pages/error';
 
 
 function App() {

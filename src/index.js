@@ -6,7 +6,7 @@ import {
   Route,
 } from 'react-router-dom';
 
-import Home from '../src/pages/Home.js';
+import Home from '../src/pages/Home'
 import AboutUs  from '../src/pages/aPropos';
 import Logement from '../src/pages/logement'
 import Error from '../src/components/Error/index'

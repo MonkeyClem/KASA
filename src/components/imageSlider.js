@@ -7,7 +7,7 @@ import '../styles/imageSlider.css'
 
 export function ImageSlider({slides}){
 
-    /*  Utilisation de useParams qui nous retournes les paramètres présents de l'URL sous forme de ttableau 
+    /*  Utilisation de useParams qui nous retournes les paramètres présents de l'URL sous forme de tableau 
         Nous nous servons ensuite de la méthode find qui nous permet de trouver l'éléments ayant l'ID 
         correspondant au sein du fichier JSON
     
@@ -25,8 +25,8 @@ export function ImageSlider({slides}){
                      au tableau
         
         prevSlide : nous permet de revenir à l'index précédent :  Si current est strictement égale à 0, alors la valeur passe 
-        à length -1, ce qui permet de revenir au dernier index du tableau.  
-        Dans le cas contraire la valeur passe à current -1, ce qui permet de simplement revenir à l'index précédent
+                    à length -1, ce qui permet de revenir au dernier index du tableau.  
+                    Dans le cas contraire la valeur passe à current -1, ce qui permet de simplement revenir à l'index précédent
     */
 
     const routeParams = useParams();
